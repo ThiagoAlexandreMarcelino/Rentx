@@ -1,8 +1,8 @@
-import { Category } from "../models/Category";
+import { Category } from "../../entities/Category";
 import {
   ICategoriesRepository,
   ICreateCategoryDTO,
-} from "./ICategoriesRepository";
+} from "../ICategoriesRepository";
 
 class PostgressCategoriesRepositories implements ICategoriesRepository {
   findByName(name: string): Category {
